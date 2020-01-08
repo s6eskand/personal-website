@@ -57,6 +57,34 @@ p {
     border-radius: 50%;
 }
 
+.box {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid #1AEFC6;
+    padding: 14px 20px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type = "submit"]:hover{
+    background: #1AEFC6;
+}
+
 @keyframes change {
     0%{
         background-position: 0 50%;
@@ -70,3 +98,4 @@ p {
         background-position: 0 50%;
     }
 }
+
