@@ -166,7 +166,7 @@ div .fa:hover {
     transform: scale(1.25);
 }
 
-.container {
+.maintext {
     position: absolute;
     top: 10%;
 }
