@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <section>
+        <div>
+			<a href="{% url 'navigation' %}"><i class="fa fa-home" aria-hidden="true"></i></a>
+		</div>
+
+		<ul>
+			<li><a href="{% url 'claw_machine' %}">Claw Machine</a></li>
+			<li><a href="{% url 'coollistings' %}">CoolListings</a></li>
+			<li><a href="{% url 'wheel_of_fortune %}">W-O-F</a></li>
+		</ul>
+	</section>
+{% endblock content %}
