@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Contact
 
 
 # Create your views here.
@@ -32,3 +33,10 @@ def wheel_of_fortune(request):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def contact(request):
+    search = request.POST.get('search')
+    Contact.objects.create(contact=contact)
+
+    return render(request, 'contact.html')
