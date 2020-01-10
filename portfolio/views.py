@@ -28,3 +28,7 @@ def coollistings(request):
 
 def wheel_of_fortune(request):
     return render(request, 'wof.html')
+
+
+def about(request):
+    return render(request, 'about.html')

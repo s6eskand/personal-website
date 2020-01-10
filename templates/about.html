@@ -1,0 +1,81 @@
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sam Eskandar: The Website</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/aboutstyle.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <section>
+        <div>
+			<a href="{% url 'navigation' %}"><i class="fa fa-home" aria-hidden="true"></i></a>
+		</div>
+
+        <div style="position: absolute; top: 5%;">
+            <h1>About Me</h1>
+
+            <blockquote style="border-left: 5px solid #1AEFC6;">
+                Hi! As you may have guessed my name is Sam Eskandar and I am a Mechatronics Engineering student at the
+                University of Waterloo with a passion for Software ad Web Development.
+
+                <br>
+                <br>
+
+                Although I spend most of my time in class solving integrals or behind a computer writing various list
+                comprehensions in python, it wasn't always like that (okay maybe the integral part was)!
+
+                <br>
+                <br>
+
+                I used to be sure of myself pursuing a Medical degree and becoming a doctor as many of my uncles are Doctors
+                and my two of my cousins are in Medical School along with my sister (crazy huh!).
+                However, when I wrote my first python program (#HelloWorld) I realized that although Doctors are amazing
+                individuals helping the sick and tackling modern diseases head on, Engineers are constantly building
+                creative solutions to many issues facing the Medical World today! For example the MRI is an amazing display
+                of how Engineers are constantly contributing to the Medical Field. It was this reason that I decided to
+                pursue an Engineering degree, as so many technologies that I will contribute to in the future will directly
+                affect its users in a positive way.
+
+                <br>
+                <br>
+
+                Another reason why I love Engineering is how it highlights the importance of teamwork. One of my favourite
+                videos that inspires me on a daily basis and really outlines the dedication Engineers put into their
+                projects and careers can be found <a href="https://www.youtube.com/watch?v=PCKogFDM3Zg">here.</a>
+
+                <br>
+                <br>
+
+                However, Engineering and school is not everything I am. I also am a musician! I have been playing the
+                trumpet for 6 years now and for the past four have been lead trumpet for the Toronto All-Star Big Band and
+                Etobicoke Jazz Band (TABB's sister organization).
+
+                <br>
+                <br>
+
+                With this position I have played at various venues such as the Beaches Jazz Festival, Mel Lastman Square,
+                and Parry Sounds Festival of the Sound. In addition to the concerts I've played at, I've made amazing
+                memories and connections with not only my bandmates but the numerous individuals I had the chance to meet
+                and talk to through many performances at Retirement Homes around the Etobicoke area.
+
+                <br>
+                <br>
+
+                If you wanted to hear me play <a href="https://www.youtube.com/watch?v=6g62U2zJAGI">here's a video</a> of
+                the band performing Michael Buble's rendition of "Save the Last Dance For Me" at Mel Lastman Square (if
+                you are having a hard time finding me, I'm the shortest trumpet player playing the unnecessarily high
+                notes). Another video (myself not included) of TABB playing on Breakfast Television can be found <a href="https://www.youtube.com/watch?v=rT6Qmdivufc">here.</a>
+            </blockquote>
+        </div>
+    </section>
+
+</body>
+</html>
