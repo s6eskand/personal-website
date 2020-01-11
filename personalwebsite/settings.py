@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'sam-eskandar.wsgi.application'
+WSGI_APPLICATION = 'personalwebsite.wsgi.application'
 
 
 # Database
