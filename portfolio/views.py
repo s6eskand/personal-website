@@ -40,7 +40,17 @@ def about(request):
 
 
 def contact(request):
-    search = request.POST.get('search')
-    Contact.objects.create(contact=contact)
-
     return render(request, 'contact.html')
+
+
+def sent_info(request):
+    user_name = request.POST.get("name")
+    email = request.POST.get("email")
+    message = request.POST.get("message")
+
+    contact_info = Contact(user_name=user_name, email=email, message=message)
+
+    if user_name and email and message:
+        contact_info.save()
+
+    return render(request, 'sent_info.html')

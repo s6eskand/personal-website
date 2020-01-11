@@ -1,36 +1,41 @@
 {% load static %}
 
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Sam Eskandar: The Website</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/navstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contactstyle.css' %}">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: 'Josefin Sans', sans-serif;">
 
-    <section class="section1" style="font-family: 'Josefin Sans', sans-serif;">
-        <div>
-			<a href="{% url 'navigation' %}"><i class="fa fa-home" aria-hidden="true"></i></a>
+    <section>
+        <div class="home-icon">
+			<a href="{% url 'navigation' %}"><i class="fa fa-home" aria-hidden="true" style="color: white;"></i></a>
 		</div>
 
-        <div style="position: absolute; top: 10%;">
-            <h1>Enter your email</h1>
-            <p>I'll get back to you as soon as I can!</p>
-
-            <form action="{% url 'navigation' %}" method="post">
-            {% csrf_token %}
-            <input type="text" name="search" placeholder="Enter your email">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-               <i class="material-icons right">send</i>
-            </button>
-        </form>
+        <div class="contact-title">
+            <h1>Say Hello!</h1>
+            <h2>Fill out the form and I'll respond as soon as I can!</h2>
         </div>
+
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="{% url 'sent_info' %}">
+                {% csrf_token %}
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+
+                <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+
+                <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+
+                <input type="submit" class="form-control submit" value="SEND MESSAGE">
+            </form>
+        </div>
+
     </section>
 
 </body>

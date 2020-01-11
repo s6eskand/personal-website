@@ -12,4 +12,5 @@ urlpatterns = [
     path('wheel_of_fortune/', views.wheel_of_fortune, name='wheel_of_fortune'),
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
+    path('received/', views.sent_info, name='sent_info'),
 ]
