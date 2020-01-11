@@ -1,1 +1,1 @@
-web: gunicorn sam-eskandar.wsgi
+web: gunicorn personalwebsite.wsgi
