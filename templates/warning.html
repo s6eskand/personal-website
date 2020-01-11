@@ -1,0 +1,40 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sam Eskandar: The Website</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/warningstyle.css' %}">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <div style="position: absolute; top: 10%; left: 48%;">
+        <i class="fa fa-bug" aria-hidden="true"></i>
+    </div>
+
+    <div style="text-align: center; vertical-align: center; padding: 7.5% 0; font-family: 'Josefin Sans', sans-serif;">
+        <h1>Hey!</h1>
+        <h1>Are you currently on your mobile device?</h1>
+        <br>
+        <p>If you are it would be greatly appreciated if you could instead view this on your laptop or desktop. The site currently isnt optomized for mobile use and you won't be able to view the animations I worked so hard on :(</p>
+        <br>
+        <p>Looking forward to you enjoying the website when you are on your laptop or desktop!</p>
+        <br>
+        <p>P.S. if you're not on a mobile device right now just click on the icon below to enter the site!</p>
+        <br>
+        <p>Enjoy!</p>
+    </div>
+
+    <div class="bounce">
+        <a href="{% url 'home' %}"><i class="fa fa-forward"></i></a>
+    </div>
+
+
+</body>
+</html>

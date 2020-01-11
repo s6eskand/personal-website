@@ -3,6 +3,10 @@ from .models import Contact
 
 
 # Create your views here.
+def warning(request):
+    return render(request, 'warning.html')
+
+
 def home(request):
     return render(request, 'base.html')
 
