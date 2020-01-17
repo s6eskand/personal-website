@@ -9,23 +9,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-    <section style="font-family: 'Josefin Sans', sans-serif;">
-        <img src="{% static 'images/profile_pic.png' %}" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -135%); border-radius: 50%; border-top: 50%">
-        <h1>Sam Eskandar</h1>
-        <p>Engineering Student</p>
-        <div class="social-icons" style="font-size: 36px;">
-            <a href="https://www.linkedin.com/in/sameskandar/"><i class="fa fa-linkedin" aria-hidden="true" style="color: white;"></i></a>
-            <a href="https://github.com/s6eskand"><i class="fa fa-github" aria-hidden="true" style="color: white;"></i></a>
-            <a href="https://github.com/s6eskand/resume/blob/master/Sam%20Eskandar%20Resume.pdf"><i class="fa fa-file" aria-hidden="true" style="color: white;"></i></a>
+    <section>
+        
+        <div style="text-align: center; vertical-align: center; padding: 7.5% 0;">
+            <div class="container">
+                <img src="{% static 'images/profile_pic.png' %}" style="border-radius: 50%; border-top: 50%">
+            </div>
+
+            <div style="font-family: 'Josefin Sans', sans-serif;">
+                <div style="border-radius: 50%; border-top: 50%;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 style="text-align: middle;">Sam Eskandar</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Engineering Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="social-icons" style="font-size: 36px;">
+                            <a href="https://www.linkedin.com/in/sameskandar/"><i class="fa fa-linkedin" aria-hidden="true" style="color: white;"></i></a>
+                            <a href="https://github.com/s6eskand"><i class="fa fa-github" aria-hidden="true" style="color: white;"></i></a>
+                            <a href="https://github.com/s6eskand/resume/blob/master/Sam%20Eskandar%20Resume.pdf"><i class="fa fa-file" aria-hidden="true" style="color: white;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <form class="box" action="{% url 'navigation' %}">
+                            <input type="submit" name="" value="More">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <form class="box" action="{% url 'navigation' %}">
-            <input type="submit" name="" value="More">
-        </form>
+
     </section>
 
 </body>
