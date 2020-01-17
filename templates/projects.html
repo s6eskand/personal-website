@@ -15,15 +15,23 @@
 <body>
 
     <section class="section1" style="font-family: 'Josefin Sans', sans-serif;">
-        <div>
-			<a href="{% url 'navigation' %}"><i class="fa fa-home" aria-hidden="true" style="color: white;"></i></a>
+
+        <div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div>
+						<a href="{% url 'navigation' %}"><i class="fa fa-home" aria-hidden="true" style="color: white;"></i></a>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<ul>
+		<ul style="display: inline; float: left; text-align: center; vertical-align: center; padding: 7.5% 0;">
 			<li><a href="{% url 'claw_machine' %}">Claw Machine</a></li>
 			<li><a href="{% url 'coollistings' %}">CoolListings</a></li>
 			<li><a href="{% url 'wheel_of_fortune' %}">W-O-F</a></li>
 		</ul>
+        
 	</section>
 
 </body>
