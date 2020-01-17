@@ -19,7 +19,6 @@ html {
     background-size: 400% 400%;
     position: absolute;
     animation: change 10s ease-in-out infinite;
-    transition: 0.75s;
 }
 
 .section2  {
@@ -30,7 +29,6 @@ html {
     background-size: 400% 400%;
     position: absolute;
     animation: change 10s ease-in-out infinite;
-    transition: 0.75s;
 }
 
 body {
@@ -62,13 +60,13 @@ ul li a {
 }
 
 ul:hover li a{
-    transform: scale(1.5);
+    transform: scale(1.25);
     opacity: .2;
     filter: blur(5px);
 }
 
 ul li a:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     opacity: 1;
     filter: blur(0);
 }
