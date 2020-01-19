@@ -13,7 +13,7 @@ html {
 
 .section1 {
     width: 100%;
-    height: 100vh;
+    /*height: 100vh;*/
     color: #fff;
     background-image: linear-gradient(to right top, #031f45, #005182, #0088ad, #00c1b7, #01f7a4);
     background-size: 400% 400%;
