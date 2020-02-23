@@ -43,6 +43,10 @@ def contact(request):
     return render(request, 'contact.html')
 
 
+def deltahacks(request):
+    return render(request, 'deltahacks.html')
+
+
 def sent_info(request):
     user_name = request.POST.get("name")
     email = request.POST.get("email")
