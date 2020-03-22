@@ -58,3 +58,6 @@ def sent_info(request):
         contact_info.save()
 
     return render(request, 'sent_info.html')
+
+def quizapp(request):
+    return render(request, 'quizzapp.html')

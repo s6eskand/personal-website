@@ -1,0 +1,52 @@
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158676157-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-158676157-1');
+    </script>
+    <meta charset="UTF-8">
+    <title>Sam Eskandar: The Website</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/navstyle.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <section class="section1">
+        <div>
+			<a href="{% url 'projects' %}"><i class="fa fa-home" aria-hidden="true" style="color: white;"></i></a>
+			<a href="https://s6eskand.github.io/quizapp"><i class="fa fa-laptop" aria-hidden="true" style="color: white; position: absolute; top: 0%; left: 300%;"></i></a>
+            <a href="https://github.com/s6eskand/quizapp"><i class="fa fa-github" aria-hidden="true" style="color: white; position: absolute; top: 0%; left: 150%;"></i></a>
+		</div>
+
+        <div style="position: absolute; top: 10%; font-family: 'Josefin Sans', sans-serif;">
+            <h1>Quiz App</h1>
+            <img src="{% static 'images/quizzapp.png' %}" style="width: 500px; height: 350px; padding: 0; float: right; margin-right: 10px; margin-top: -50px;">
+
+            <blockquote style="border-left: 5px solid #1AEFC6;">
+                This quiz app was built using JavaScript, HTML, and CSS. Utilizes the Open Trivia Database API for trivia questions
+
+                <br>
+                <br>
+                The front end utilizes CSS flex box properties for a responsive web design, as well as a JavaScript loader animation.
+
+                <br>
+                <br>
+                User scores as well as high scores are stored in local storage.
+            </blockquote>
+        </div>
+    </section>
+
+</body>
+</html>

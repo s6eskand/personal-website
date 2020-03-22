@@ -14,4 +14,5 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('received/', views.sent_info, name='sent_info'),
     path('findmyfam/', views.deltahacks, name="deltahacks"),
+    path('quizapp/', views.quizapp, name='quizapp'),
 ]
